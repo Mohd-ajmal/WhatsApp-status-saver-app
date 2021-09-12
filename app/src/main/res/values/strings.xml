@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Saver</string>
+    <string name="created_by_developer_aji">Created by developer aji</string>
+    <string name="status_saver">status saver</string>
+    <string name="saved">SAVED</string>
+    <string name="ok">OK</string>
+    <string name="picture">Picture</string>
+    <string name="video">Video</string>
+</resources>

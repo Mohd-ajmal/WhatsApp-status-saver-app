@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VideoAndPicture.Video">
+
+    <LinearLayout
+        android:id="@+id/toolbarv"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/primary">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="@string/video"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:padding="5dp"
+            style="@style/TextAppearance.AppCompat.Large"/>
+    </LinearLayout>
+
+
+    <VideoView
+        android:id="@+id/videoView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbarv"
+        android:layout_above="@+id/images_linear_video"
+        android:layout_centerInParent="true"/>
+
+    <LinearLayout
+        android:id="@+id/images_linear_video"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <ImageView
+            android:id="@+id/statusSaverLogoVideo"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:src="@drawable/image_sschatapplogo"
+            android:contentDescription="@string/app_name"/>
+        <ImageView
+            android:id="@+id/downloadLogoVideo"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:src="@drawable/image_download_blue"
+            android:contentDescription="@string/app_name"/>
+        <ImageView
+            android:id="@+id/shareLogoVideo"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:src="@drawable/image_share"
+            android:contentDescription="@string/app_name"/>
+    </LinearLayout>
+
+
+</RelativeLayout>
